@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct detailNoteScreen: View {
+    var note: NoteModel
+    var body: some View{
+        Text(note.title)
+    }
+}
+
+#Preview {
+    NavigationView{
+        detailNoteScreen(note: testData[0])
+    }
+}

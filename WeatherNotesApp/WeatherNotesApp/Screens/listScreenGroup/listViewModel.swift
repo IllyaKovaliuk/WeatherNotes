@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class listViewModel: ObservableObject {
+    @Published var list: [NoteModel]
+    
+    init(list: [NoteModel]) {
+        self.list = list
+    }
+}
+let testlist = listViewModel(list: testData)
