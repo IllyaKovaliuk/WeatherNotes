@@ -18,6 +18,7 @@
 		9D9B4F2B2EC8B5A700F88BF6 /* addNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B4F2A2EC8B5A700F88BF6 /* addNoteViewModel.swift */; };
 		9D9B4F2E2EC8B5EB00F88BF6 /* detailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B4F2D2EC8B5EB00F88BF6 /* detailScreen.swift */; };
 		9D9B4F302EC8B60600F88BF6 /* detailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B4F2F2EC8B60600F88BF6 /* detailViewModel.swift */; };
+		9D9B4F322EC9474200F88BF6 /* weatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B4F312EC9474200F88BF6 /* weatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9D9B4F2A2EC8B5A700F88BF6 /* addNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNoteViewModel.swift; sourceTree = "<group>"; };
 		9D9B4F2D2EC8B5EB00F88BF6 /* detailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailScreen.swift; sourceTree = "<group>"; };
 		9D9B4F2F2EC8B60600F88BF6 /* detailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewModel.swift; sourceTree = "<group>"; };
+		9D9B4F312EC9474200F88BF6 /* weatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9D9B4F1F2EC8B4E200F88BF6 /* noteModel.swift */,
+				9D9B4F312EC9474200F88BF6 /* weatherModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				9D9B4F262EC8B55B00F88BF6 /* listViewModel.swift in Sources */,
 				9D9B4F0E2EC8AA0400F88BF6 /* ContentView.swift in Sources */,
 				9D9B4F202EC8B4E200F88BF6 /* noteModel.swift in Sources */,
+				9D9B4F322EC9474200F88BF6 /* weatherModel.swift in Sources */,
 				9D9B4F0C2EC8AA0400F88BF6 /* WeatherNotesAppApp.swift in Sources */,
 				9D9B4F2B2EC8B5A700F88BF6 /* addNoteViewModel.swift in Sources */,
 				9D9B4F302EC8B60600F88BF6 /* detailViewModel.swift in Sources */,
