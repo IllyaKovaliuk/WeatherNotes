@@ -9,19 +9,30 @@ import Foundation
 import SwiftUI
 
 struct listView: View {
+
     @ObservedObject var viewModel: listViewModel
     var body: some View{
-        NavigationView{
-            List{
-                ForEach(viewModel.list){ note in
-                    noteUnit(note: note)
+        ZStack{
+            NavigationView{
+                List{
+                    ForEach(viewModel.list){ note in
+                        noteUnit(note: note)
+                    }
                 }
+                .navigationTitle("Notes list")
             }
-            .navigationTitle("Notes list")
         }
-        
+//        .background{
+//            Color.teal.opacity(0.3)
+//                .ignoresSafeArea()
+//        }
+//        .foregroundColor()
+            
+            CrudButton()
+        }
     }
-}
+
+
 
 #Preview {
     listView(viewModel: testlist)
@@ -55,3 +66,25 @@ struct noteUnit: View {
         }
     }
 }
+
+
+struct CrudButton: View {
+    var body: some View{
+        Text("Button")
+    }
+}
+
+struct BackgroudView: View {
+    @Binding var isNight: Bool
+    var body: some View {
+        LinearGradient(
+            gradient: Gradient(colors: [isNight ? .black : .blue, isNight ? .gray : .white]),
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing)
+        .ignoresSafeArea()
+    }
+}
+
+
+
+
