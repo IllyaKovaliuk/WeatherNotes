@@ -17,8 +17,8 @@ struct weatherModel: Codable {
 
 var weatherTest = [
     weatherModel(temperature: 20.0, condition: "default", icon: "circle.fill", city: "Kyiv"),
-    weatherModel(temperature: 22.0, condition: "normal", icon: "cloud", city: "Zhytomyr"),
-    weatherModel(temperature: 10.0, condition: "cloud", icon: "sun.fill", city: "Berdychiv"),
+    weatherModel(temperature: 22.0, condition: "normal", icon: "cloud.fill", city: "Zhytomyr"),
+    weatherModel(temperature: 10.0, condition: "cloud", icon: "sunrise", city: "Berdychiv"),
     weatherModel(temperature: 17.0, condition: "default", icon: "circle.fill", city: "Vinnytsa")
 
 ]
