@@ -9,33 +9,30 @@ import Foundation
 import SwiftUI
 
 struct listView: View {
-
+    
     @ObservedObject var viewModel: listViewModel
     var body: some View{
-        ZStack{
-            NavigationView{
-                List{
-                    ForEach(viewModel.list){ note in
-                        noteUnit(note: note)
-                    }
+        NavigationView{
+            List{
+                ForEach(viewModel.notes){ note in
+                    noteUnit(note: note)
                 }
-                .navigationTitle("Notes list")
             }
-        }
-//        .background{
-//            Color.teal.opacity(0.3)
-//                .ignoresSafeArea()
-//        }
-//        .foregroundColor()
+            .toolbar {
+                NavigationLink {
+                    AddNoteScreen(viewModel: AddNoteViewModel())
+                } label: {
+                    Text("Add")
+                }
+            }
             
-            CrudButton()
         }
     }
-
+}
 
 
 #Preview {
-    listView(viewModel: testlist)
+    listView(viewModel: listViewModel())
 }
 
 
@@ -68,11 +65,7 @@ struct noteUnit: View {
 }
 
 
-struct CrudButton: View {
-    var body: some View{
-        Text("Button")
-    }
-}
+
 
 struct BackgroudView: View {
     @Binding var isNight: Bool
