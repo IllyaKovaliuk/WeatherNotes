@@ -15,7 +15,7 @@ struct listView: View {
         ZStack{
             NavigationView{
                 List{
-                    ForEach(viewModel.list){ note in
+                    ForEach(viewModel.notes){ note in
                         noteUnit(note: note)
                     }
                 }
@@ -35,7 +35,7 @@ struct listView: View {
 
 
 #Preview {
-    listView(viewModel: testlist)
+    listView(viewModel: listViewModel())
 }
 
 

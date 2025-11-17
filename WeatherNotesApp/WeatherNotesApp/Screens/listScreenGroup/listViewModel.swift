@@ -4,14 +4,19 @@
 //
 //  Created by Illya Kovaliuk on 15.11.2025.
 //
-
 import Foundation
 
 class listViewModel: ObservableObject {
-    @Published var list: [NoteModel]
-    
-    init(list: [NoteModel]) {
-        self.list = list
+    @Published var notes: [NoteModel] = []
+
+    init() {
+        loadNotes()
+    }
+
+    func loadNotes() {
+        if let data = UserDefaults.standard.data(forKey: "savedNotes"),
+           let decoded = try? JSONDecoder().decode([NoteModel].self, from: data) {
+            self.notes = decoded
+        }
     }
 }
-let testlist = listViewModel(list: testData)

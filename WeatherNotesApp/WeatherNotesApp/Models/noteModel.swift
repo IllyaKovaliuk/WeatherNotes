@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NoteModel: Identifiable {
+struct NoteModel: Identifiable, Encodable, Decodable {
     var id = UUID()
     var title: String
     var createTime: String
