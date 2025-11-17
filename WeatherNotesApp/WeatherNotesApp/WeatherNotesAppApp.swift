@@ -15,3 +15,6 @@ struct WeatherNotesAppApp: App {
         }
     }
 }
+
+
+//add note 
